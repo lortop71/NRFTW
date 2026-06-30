@@ -18,6 +18,10 @@
     --infected-glow: rgba(139,58,139,0.18);
     --text: #f0e6d2;
     --text-dim: #ab9c84;
+    --ench-bg: rgba(255,255,255,0.03);
+    --ench-bg-hover: rgba(255,255,255,0.055);
+    --shadow: rgba(0,0,0,0.4);
+    --shadow-strong: rgba(0,0,0,0.6);
 
     --cat-varie: #9a8a70;
     --cat-offensivo: #d9483a;
@@ -30,6 +34,34 @@
     --cat-movimento: #e67e22;
   }
 
+  [data-theme="light"] {
+    --bg: #f3ede0;
+    --surface: #ffffff;
+    --border: #d9cdb0;
+    --gold: #8a6a1f;
+    --gold-dim: #b89a4e;
+    --magic: #2766a8;
+    --magic-glow: rgba(39,102,168,0.12);
+    --infected: #7a2f7a;
+    --infected-glow: rgba(122,47,122,0.12);
+    --text: #2c2417;
+    --text-dim: #6b5d45;
+    --ench-bg: rgba(0,0,0,0.035);
+    --ench-bg-hover: rgba(0,0,0,0.06);
+    --shadow: rgba(140,120,80,0.18);
+    --shadow-strong: rgba(140,120,80,0.28);
+
+    --cat-varie: #7a6a50;
+    --cat-offensivo: #b8311f;
+    --cat-vigore: #1d8a4a;
+    --cat-salute: #c93a2c;
+    --cat-critico: #b8770f;
+    --cat-difesa: #1f6fa8;
+    --cat-focus: #7e3aa3;
+    --cat-elementale: #0f8a73;
+    --cat-movimento: #b85f10;
+  }
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
   body {
@@ -39,7 +71,31 @@
     font-size: 19px;
     line-height: 1.65;
     min-height: 100vh;
+    transition: background 0.25s, color 0.25s;
   }
+
+  /* Theme toggle */
+  .theme-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 200;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid var(--gold-dim);
+    background: var(--surface);
+    color: var(--gold);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px var(--shadow);
+    transition: transform 0.2s, border-color 0.2s, background 0.25s, color 0.25s;
+  }
+
+  .theme-toggle:hover { transform: scale(1.08); border-color: var(--gold); }
 
   /* ── HOMEPAGE ── */
   #page-home { min-height: 100vh; }
@@ -150,7 +206,7 @@
     transition: opacity 0.2s;
   }
 
-  .equip-card:hover { border-color: var(--gold-dim); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.4); }
+  .equip-card:hover { border-color: var(--gold-dim); transform: translateY(-3px); box-shadow: 0 12px 40px var(--shadow); }
   .equip-card:hover::before { opacity: 1; }
 
   .equip-icon {
@@ -159,11 +215,11 @@
     border-radius: 50%;
     overflow: hidden;
     border: 1px solid var(--gold-dim);
-    box-shadow: 0 0 0 3px rgba(0,0,0,0.4), 0 8px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 3px var(--shadow), 0 8px 20px var(--shadow);
     transition: box-shadow 0.2s, border-color 0.2s;
   }
 
-  .equip-card:hover .equip-icon { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,168,76,0.15), 0 8px 24px rgba(0,0,0,0.6); }
+  .equip-card:hover .equip-icon { border-color: var(--gold); box-shadow: 0 0 0 3px var(--magic-glow), 0 8px 24px var(--shadow-strong); }
 
   .equip-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
@@ -201,7 +257,8 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(13,11,8,0.95);
+    background: var(--bg);
+    opacity: 0.97;
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--border);
     padding: 14px 24px;
@@ -284,17 +341,17 @@
   .ench-list { display: flex; flex-direction: column; gap: 8px; padding-left: 16px; }
 
   .ench-item {
-    background: rgba(255,255,255,0.03);
+    background: var(--ench-bg);
     border-left: 3px solid;
     padding: 12px 16px;
     border-radius: 0 4px 4px 0;
     font-size: 17px;
-    color: #e4d9c4;
+    color: var(--text);
     line-height: 1.55;
     transition: background 0.15s;
   }
 
-  .ench-item:hover { background: rgba(255,255,255,0.055); }
+  .ench-item:hover { background: var(--ench-bg-hover); }
 
   .cat-Varie      .cat-bar, .cat-Varie      .cat-label { color: var(--cat-varie); }
   .cat-Varie      .ench-item { border-color: var(--cat-varie); }
@@ -379,10 +436,12 @@
     .item-content { padding: 24px 16px 60px; }
     .type-tab { padding: 12px 20px; font-size: 13px; }
     .equip-icon { width: 78px; height: 78px; }
+    .theme-toggle { width: 40px; height: 40px; font-size: 17px; top: 10px; right: 10px; }
   }
 </style>
 </head>
 <body>
+<button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" title="Cambia tema" aria-label="Cambia tema chiaro/scuro">🌙</button>
 
 <div id="page-home">
   <div class="hero">
@@ -425,6 +484,28 @@ const CAT_COLORS = {
 const CAT_ORDER = ['Varie','Offensivo','Vigore','Salute','Critico','Difesa','Focus','Elementale','Movimento'];
 
 let DATA = {};
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  const btn = document.getElementById('theme-toggle');
+  btn.textContent = theme === 'light' ? '☀️' : '🌙';
+}
+
+function toggleTheme() {
+  const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+  const next = current === 'light' ? 'dark' : 'light';
+  applyTheme(next);
+  try { localStorage.setItem('nrftw-theme', next); } catch(e) {}
+}
+
+(function initTheme() {
+  let saved = null;
+  try { saved = localStorage.getItem('nrftw-theme'); } catch(e) {}
+  if (!saved) {
+    saved = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+  }
+  applyTheme(saved);
+})();
 
 function countEnch(item) {
   const d = DATA[item];
