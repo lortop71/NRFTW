@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ldelg="it">
+<html lang="it">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,19 +16,18 @@
     --magic-glow: rgba(74,143,212,0.18);
     --infected: #8b3a8b;
     --infected-glow: rgba(139,58,139,0.18);
-    --text: #e8dcc8;
-    --text-dim: #9a8d78;
+    --text: #f0e6d2;
+    --text-dim: #ab9c84;
 
-    /* Category colors */
-    --cat-varie: #7a6a55;
-    --cat-offensivo: #c0392b;
-    --cat-vigore: #27ae60;
-    --cat-salute: #e74c3c;
-    --cat-critico: #f39c12;
-    --cat-difesa: #2980b9;
-    --cat-focus: #8e44ad;
-    --cat-elementale: #16a085;
-    --cat-movimento: #d35400;
+    --cat-varie: #9a8a70;
+    --cat-offensivo: #d9483a;
+    --cat-vigore: #2ecc71;
+    --cat-salute: #ff5c4d;
+    --cat-critico: #f5a623;
+    --cat-difesa: #3498db;
+    --cat-focus: #a55ad1;
+    --cat-elementale: #1abc9c;
+    --cat-movimento: #e67e22;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -37,16 +36,13 @@
     background: var(--bg);
     color: var(--text);
     font-family: 'Crimson Pro', Georgia, serif;
-    font-size: 17px;
-    line-height: 1.6;
+    font-size: 19px;
+    line-height: 1.65;
     min-height: 100vh;
   }
 
   /* ── HOMEPAGE ── */
-  #page-home {
-    display: block;
-    min-height: 100vh;
-  }
+  #page-home { min-height: 100vh; }
 
   .hero {
     position: relative;
@@ -60,40 +56,40 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,168,76,0.08) 0%, trdelsparent 70%);
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,168,76,0.08) 0%, transparent 70%);
     pointer-events: none;
   }
 
   .hero-eyebrow {
     font-family: 'Cinzel', serif;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 4px;
     color: var(--gold-dim);
-    text-trdelsform: uppercase;
+    text-transform: uppercase;
     margin-bottom: 18px;
   }
 
   .hero h1 {
     font-family: 'Cinzel', serif;
-    font-size: clamp(2rem, 5vw, 3.6rem);
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
     font-weight: 900;
     color: var(--gold);
     letter-spacing: 2px;
     line-height: 1.1;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
 
   .hero-sub {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     color: var(--text-dim);
     font-style: italic;
-    max-width: 500px;
+    max-width: 540px;
     margin: 0 auto 40px;
   }
 
   .legend {
     display: flex;
-    gap: 20px;
+    gap: 24px;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 10px;
@@ -104,49 +100,40 @@
     align-items: center;
     gap: 8px;
     font-family: 'Cinzel', serif;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
   }
 
-  .legend-dot {
-    width: 10px; height: 10px; border-radius: 50%;
-    flex-shrink: 0;
-  }
-
+  .legend-dot { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }
   .legend-dot.magic { background: var(--magic); }
   .legend-dot.infected { background: var(--infected); }
 
-  /* Equipment Grid */
-  .equip-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 60px 24px 80px;
-  }
+  .equip-section { max-width: 1040px; margin: 0 auto; padding: 60px 24px 80px; }
 
   .section-title {
     font-family: 'Cinzel', serif;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 4px;
     color: var(--gold-dim);
-    text-trdelsform: uppercase;
+    text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
   }
 
   .equip-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 22px;
   }
 
   .equip-card {
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 4px;
-    padding: 30px 20px 24px;
+    border-radius: 6px;
+    padding: 26px 20px 22px;
     text-align: center;
     cursor: pointer;
-    trdelsition: border-color 0.2s, trdelsform 0.2s, box-shadow 0.2s;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
     position: relative;
     overflow: hidden;
     text-decoration: none;
@@ -158,72 +145,56 @@
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 2px;
-    background: linear-gradient(90deg, trdelsparent, var(--gold), trdelsparent);
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
     opacity: 0;
-    trdelsition: opacity 0.2s;
+    transition: opacity 0.2s;
   }
 
-  .equip-card:hover {
-    border-color: var(--gold-dim);
-    trdelsform: trdelslateY(-3px);
-    box-shadow: 0 12px 40px rgba(0,0,0,0.4);
-  }
-
+  .equip-card:hover { border-color: var(--gold-dim); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.4); }
   .equip-card:hover::before { opacity: 1; }
 
   .equip-icon {
-    width: 70px; height: 70px;
-    margin: 0 auto 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 92px; height: 92px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid var(--gold-dim);
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.4), 0 8px 20px rgba(0,0,0,0.5);
+    transition: box-shadow 0.2s, border-color 0.2s;
   }
 
-  .equip-icon svg {
-    width: 100%; height: 100%;
-    filter: drop-shadow(0 0 8px rgba(201,168,76,0.3));
-    trdelsition: filter 0.2s;
-  }
+  .equip-card:hover .equip-icon { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,168,76,0.15), 0 8px 24px rgba(0,0,0,0.6); }
 
-  .equip-card:hover .equip-icon svg {
-    filter: drop-shadow(0 0 14px rgba(201,168,76,0.6));
-  }
+  .equip-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
   .equip-name {
     font-family: 'Cinzel', serif;
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 600;
     color: var(--gold);
     letter-spacing: 1px;
     margin-bottom: 6px;
   }
 
-  .equip-count {
-    font-size: 12px;
-    color: var(--text-dim);
-  }
+  .equip-count { font-size: 14px; color: var(--text-dim); }
 
-  .badge-pair {
-    display: flex;
-    gap: 6px;
-    justify-content: center;
-    margin-top: 10px;
-  }
+  .badge-pair { display: flex; gap: 8px; justify-content: center; margin-top: 12px; flex-wrap: wrap; }
 
   .badge {
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'Cinzel', serif;
     letter-spacing: 0.5px;
-    padding: 2px 8px;
+    padding: 3px 10px;
     border-radius: 20px;
   }
 
   .badge.m { background: rgba(74,143,212,0.2); color: var(--magic); border: 1px solid rgba(74,143,212,0.3); }
-  .badge.i { background: rgba(139,58,139,0.2); color: #c07ac0; border: 1px solid rgba(139,58,139,0.3); }
+  .badge.i { background: rgba(139,58,139,0.2); color: #d090d0; border: 1px solid rgba(139,58,139,0.3); }
+
+  .loading-msg { text-align: center; padding: 60px 20px; color: var(--text-dim); font-style: italic; font-size: 18px; }
 
   /* ── ITEM PAGE ── */
   .item-page { display: none; }
-
   .item-page.active { display: block; }
 
   .item-header {
@@ -236,7 +207,7 @@
     padding: 14px 24px;
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 18px;
   }
 
   .back-btn {
@@ -244,128 +215,87 @@
     border: 1px solid var(--border);
     color: var(--text-dim);
     font-family: 'Cinzel', serif;
-    font-size: 11px;
+    font-size: 13px;
     letter-spacing: 2px;
-    padding: 6px 14px;
+    padding: 8px 16px;
     cursor: pointer;
-    trdelsition: all 0.15s;
-    border-radius: 2px;
+    transition: all 0.15s;
+    border-radius: 3px;
   }
 
   .back-btn:hover { color: var(--gold); border-color: var(--gold-dim); }
 
   .item-header-name {
     font-family: 'Cinzel', serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: var(--gold);
     font-weight: 600;
   }
 
   .item-header-icon {
-    width: 36px; height: 36px;
+    width: 44px; height: 44px;
     margin-left: auto;
-    opacity: 0.7;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid var(--gold-dim);
   }
 
-  .item-header-icon svg { width: 100%; height: 100%; }
+  .item-header-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-  .item-content {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 40px 24px 80px;
-  }
+  .item-content { max-width: 1120px; margin: 0 auto; padding: 40px 24px 80px; }
 
-  /* Tabs: Magico / Infetto */
-  .type-tabs {
-    display: flex;
-    gap: 4px;
-    margin-bottom: 36px;
-    border-bottom: 1px solid var(--border);
-  }
+  .type-tabs { display: flex; gap: 4px; margin-bottom: 36px; border-bottom: 1px solid var(--border); }
 
   .type-tab {
-    padding: 12px 28px;
+    padding: 14px 30px;
     font-family: 'Cinzel', serif;
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 1.5px;
     cursor: pointer;
     border: none;
     background: none;
     color: var(--text-dim);
     position: relative;
-    trdelsition: color 0.15s;
+    transition: color 0.15s;
   }
 
-  .type-tab::dopo {
-    content: '';
-    position: absolute;
-    bottom: -1px; left: 0; right: 0;
-    height: 2px;
-    opacity: 0;
-    trdelsition: opacity 0.15s;
-  }
-
-  .type-tab.magic-tab::dopo { background: var(--magic); }
-  .type-tab.infected-tab::dopo { background: var(--infected); }
-
+  .type-tab::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 2px; opacity: 0; transition: opacity 0.15s; }
+  .type-tab.magic-tab::after { background: var(--magic); }
+  .type-tab.infected-tab::after { background: var(--infected); }
   .type-tab.active { color: var(--text); }
-  .type-tab.active::dopo { opacity: 1; }
+  .type-tab.active::after { opacity: 1; }
 
-  /* Category color bar */
-  .cat-section {
-    margin-bottom: 32px;
-  }
+  .cat-section { margin-bottom: 34px; }
 
-  .cat-header {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
-  }
+  .cat-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
 
-  .cat-bar {
-    width: 3px;
-    height: 22px;
-    border-radius: 2px;
-    flex-shrink: 0;
-  }
+  .cat-bar { width: 4px; height: 24px; border-radius: 2px; flex-shrink: 0; }
 
   .cat-label {
     font-family: 'Cinzel', serif;
-    font-size: 12px;
+    font-size: 15px;
     letter-spacing: 2.5px;
-    text-trdelsform: uppercase;
+    text-transform: uppercase;
     font-weight: 600;
   }
 
-  .cat-count {
-    font-size: 11px;
-    color: var(--text-dim);
-    margin-left: auto;
-    font-family: 'Cinzel', serif;
-  }
+  .cat-count { font-size: 13px; color: var(--text-dim); margin-left: auto; font-family: 'Cinzel', serif; }
 
-  .ench-list {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    padding-left: 15px;
-  }
+  .ench-list { display: flex; flex-direction: column; gap: 8px; padding-left: 16px; }
 
   .ench-item {
-    background: rgba(255,255,255,0.025);
-    border-left: 2px solid;
-    padding: 9px 14px;
-    border-radius: 0 3px 3px 0;
-    font-size: 15px;
-    color: #d4c9b5;
-    line-height: 1.5;
-    trdelsition: background 0.15s;
+    background: rgba(255,255,255,0.03);
+    border-left: 3px solid;
+    padding: 12px 16px;
+    border-radius: 0 4px 4px 0;
+    font-size: 17px;
+    color: #e4d9c4;
+    line-height: 1.55;
+    transition: background 0.15s;
   }
 
-  .ench-item:hover { background: rgba(255,255,255,0.045); }
+  .ench-item:hover { background: rgba(255,255,255,0.055); }
 
-  /* Category-specific colors */
   .cat-Varie      .cat-bar, .cat-Varie      .cat-label { color: var(--cat-varie); }
   .cat-Varie      .ench-item { border-color: var(--cat-varie); }
   .cat-Varie      .cat-bar { background: var(--cat-varie); }
@@ -402,795 +332,99 @@
   .cat-Movimento  .ench-item { border-color: var(--cat-movimento); }
   .cat-Movimento  .cat-bar { background: var(--cat-movimento); }
 
-  .empty-state {
-    text-align: center;
-    padding: 40px;
-    color: var(--text-dim);
-    font-style: italic;
-    font-size: 15px;
-  }
+  .empty-state { text-align: center; padding: 40px; color: var(--text-dim); font-style: italic; font-size: 17px; }
 
-  /* type section highlight */
   .tab-content { display: none; }
   .tab-content.active { display: block; }
 
   .type-heading {
     font-family: 'Cinzel', serif;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 3px;
-    padding: 6px 12px;
+    padding: 7px 14px;
     border-radius: 20px;
     display: inline-block;
     margin-bottom: 24px;
   }
 
-  .type-heading.magic {
-    background: var(--magic-glow);
-    color: var(--magic);
-    border: 1px solid rgba(74,143,212,0.3);
-  }
+  .type-heading.magic { background: var(--magic-glow); color: var(--magic); border: 1px solid rgba(74,143,212,0.3); }
+  .type-heading.infected { background: var(--infected-glow); color: #d090d0; border: 1px solid rgba(139,58,139,0.3); }
 
-  .type-heading.infected {
-    background: var(--infected-glow);
-    color: #c07ac0;
-    border: 1px solid rgba(139,58,139,0.3);
-  }
-
-  /* Category legend bar at top of page */
   .cat-legend {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
     margin-bottom: 32px;
-    padding: 16px 20px;
+    padding: 18px 22px;
     background: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 4px;
+    border-radius: 5px;
   }
 
   .cat-legend-item {
     display: flex;
     align-items: center;
-    gap: 7px;
-    font-size: 12px;
+    gap: 8px;
+    font-size: 14px;
     font-family: 'Cinzel', serif;
     letter-spacing: 0.5px;
     color: var(--text-dim);
   }
 
-  .cat-legend-dot {
-    width: 9px; height: 9px; border-radius: 2px;
-  }
+  .cat-legend-dot { width: 10px; height: 10px; border-radius: 2px; }
 
   @media (max-width: 600px) {
+    body { font-size: 18px; }
     .equip-grid { grid-template-columns: repeat(2, 1fr); }
     .item-content { padding: 24px 16px 60px; }
-    .type-tab { padding: 10px 18px; font-size: 11px; }
+    .type-tab { padding: 12px 20px; font-size: 13px; }
+    .equip-icon { width: 78px; height: 78px; }
   }
 </style>
 </head>
 <body>
 
-<!-- HOME PAGE -->
 <div id="page-home">
   <div class="hero">
     <div class="hero-eyebrow">No Rest for the Wicked</div>
     <h1>Incantamenti</h1>
-    <p class="hero-sub">Guida completa agli Incantamenti magici e infetti per ogni tipo di equipaggiamento</p>
+    <p class="hero-sub">Guida completa agli incantamenti magici e infetti per ogni tipo di equipaggiamento</p>
     <div class="legend">
-      <spdel class="legend-item"><spdel class="legend-dot magic"></spdel> Incantamenti Magici</spdel>
-      <spdel class="legend-item"><spdel class="legend-dot infected"></spdel> Incantamenti Infetti</spdel>
+      <span class="legend-item"><span class="legend-dot magic"></span> Incantamenti Magici</span>
+      <span class="legend-item"><span class="legend-dot infected"></span> Incantamenti Infetti</span>
     </div>
   </div>
 
   <div class="equip-section">
     <div class="section-title">Seleziona equipaggiamento</div>
-    <div class="equip-grid" id="equip-grid"></div>
+    <div class="equip-grid" id="equip-grid">
+      <div class="loading-msg">Caricamento incantamenti…</div>
+    </div>
   </div>
 </div>
 
-<!-- ITEM PAGES (generated dynamically) -->
 <div id="item-pages"></div>
 
 <script>
-const DATA = {
-  "Arma": {
-    "magico": {
-      "Varie": [
-        "Danno sbilanciamento aumentato del 15%-30% per 20 secondi dopo uccisione",
-        "Danno sbilanciamento aumentato del 15%-30% per 30 secondi dopo colpo alle spalle",
-        "Durabilità aumentata del 30%-100%",
-        "Peso ridotto del 3%-10%",
-        "Danno aumentato del 15%-30% per 30 secondi dopo colpo alle spalle"
-      ],
-      "Offensivo": [
-        "Danno aumentato del 4%-15%",
-        "Danno aumentato del 3%-10%",
-        "Danno aumentato del 6%-20% per 10 secondi dopo Danno inflitto da attacco runico",
-        "Danno aumentato del 2%-5% per ogni nemico vicino",
-        "Infliggi 7%-25% Danno da sbilanciamento al nemico",
-        "Danno rune aumentato del 4%-15%",
-        "Danno sbilanciamento aumentato del 4%-15%",
-        "Velocità d'attacco aumentata del 3%-10% of durabilità attuale",
-        "Danno aumentato del 3%-10% of durabilità attuale",
-        "Costo vigore ridotto del 7%-15%"
-      ],
-      "Vigore": [
-        "Costo vigore ridotto del 7%-25% per 10 secondi dopo parata"
-      ],
-      "Salute": [
-        "Ottieni 4%-10% salute su uccisione"
-      ],
-      "Critico": [
-        "Probabilità colpo critico aumentata del 3%-10%",
-        "Danno critico aumentato del 6%-20%"
-      ],
-      "Difesa": [
-        "Ottieni 12%-25% barriera su uccisione"
-      ]
-    },
-    "infetto": {
-      "Varie": [
-        "Durabilità aumentata del 50%-100%",
-        "Peso ridotto del 5%-10%",
-        "Ottieni 5-10 focus su colpo alle spalle",
-        "Ottieni 10%-20% salute su colpo alle spalle",
-        "Danno aumentato del 15%-30% per 30 secondi dopo colpo alle spalle",
-        "Carico equipaggiamento ridotto del 20%-30%",
-        "Non riparabile",
-        "Consuma focus in combattimento",
-        "Costo focus aumentato del 26%-40%",
-        "Perdi 10-15 focus on Danno subito",
-        "Prendi 20%-30% Danno dopo uso di Focus",
-        "Consuma salute in combattimento",
-        "Costo vigore aumentato del 20%-30%",
-        "Guarigione ridotta del 15%-25% per ogni nemico vicino"
-      ],
-      "Offensivo": [
-        "Danno aumentato del 5%-10%",
-        "Danno aumentato del 15%-30% contro nemici grdeldi",
-        "Danno aumentato del 5%-10% of durabilità attuale",
-        "Danno aumentato del 20%-40% per 20 secondi dopo fatality",
-        "Danno aumentato del 10%-20% per 10 secondi dopo Danno inflitto da attacco runico",
-        "Infliggi 12%-25% Danno da sbilanciamento al nemico",
-        "Danno rune aumentato del 10%-20%",
-        "Velocità d'attacco aumentata del 5%-10% of durabilità attuale",
-        "Danno sbilanciamento aumentato del 20%-40% per 20 secondi dopo colpo fatale"
-      ],
-      "Focus": [
-        "Ottieni 12-25 focus su fatality",
-        "Ottieni 8-15 focus su uccisione"
-      ],
-      "Vigore": [
-        "Costo vigore ridotto del 15%-30% per 20 secondi dopo colpo fatale",
-        "Costo vigore ridotto del 12%-25% per 10 secondi dopo parata"
-      ],
-      "Salute": [
-        "Ottieni 2%-4% salute su attacco caricato",
-        "Ottieni 1%-2% salute su Danno contro nemici congelati",
-        "Ottieni 7%-15% salute su fatality",
-        "Ottieni 5%-10% salute su uccisione",
-        "Ottieni 7%-15% salute on sbilanciamento del nemico"
-      ],
-      "Movimento": [
-        "Velocità movimento aumentata del 7%-15% per 10 secondi dopo Danno inflitto da attacco runico"
-      ],
-      "Critico": [
-        "Probabilità colpo critico aumentata del 5%-10%",
-        "Danno critico aumentato del 10%-20%"
-      ]
-    }
-  },
-  "Scudo": {
-    "magico": {
-      "Varie": [
-        "Durabilità aumentata del 30%-100%",
-        "Peso ridotto del 3%-10%"
-      ],
-      "Offensivo": [
-        "Ottieni 12%-40% spine",
-        "Danno aumentato del 5%-15% per 10 secondi dopo parata",
-        "Infliggi 7%-25% Danno su parata",
-        "Infliggi 5%-15% Danno su blocco",
-        "Danno aumentato del 7%-15% per 10 secondi dopo blocco"
-      ],
-      "Focus": [
-        "Ottieni 2-5 focus su blocco",
-        "Ottieni 5-15 focus su parata"
-      ],
-      "Vigore": [
-        "Ottieni 9-30 vigore su parata",
-        "Ottieni 5-15 vigore su blocco"
-      ],
-      "Difesa": [
-        "Resistenza ai danni aumentata del 4%-15% mentre blocchi"
-      ]
-    },
-    "infetto": {
-      "Varie": [
-        "Durabilità aumentata del 50%-100%",
-        "Peso ridotto del 5%-10%",
-        "Difesa postura aumentata di 5-10 mentre blocchi",
-        "Carico equipaggiamento ridotto del 20%-30%",
-        "Non riparabile",
-        "Consuma focus in combattimento",
-        "Costo focus aumentato del 26%-40%",
-        "Perdi 10-15 focus on Danno subito",
-        "Consuma salute in combattimento",
-        "Blocco disabilitato"
-      ],
-      "Offensivo": [
-        "Ottieni 20%-40% spine",
-        "Infliggi 7%-15% Danno su blocco",
-        "Danno aumentato del 7%-15% per 10 secondi dopo blocco",
-        "Infliggi 12%-25% Danno su parata",
-        "Danno aumentato del 7%-15% per 10 secondi dopo parata"
-      ],
-      "Salute": [
-        "Ottieni 5%-10% salute su parata"
-      ],
-      "Movimento": [
-        "Resistenza ai danni aumentata del 7%-15% mentre blocchi"
-      ]
-    }
-  },
-  "Arco": {
-    "magico": {
-      "Varie": [
-        "Danno sbilanciamento aumentato del 15%-30% per 20 secondi dopo uccisione",
-        "Durabilità aumentata del 30%-100%",
-        "Peso ridotto del 3%-10%"
-      ],
-      "Offensivo": [
-        "Danno aumentato del 4%-15%",
-        "Danno aumentato del 3%-10% of durabilità attuale",
-        "Danno aumentato del 4%-15% per 10 secondi dopo Danno schivato",
-        "Infliggi 4%-15% Danno su Danno schivato",
-        "Danno aumentato del 3%-10%",
-        "Rune Danno aumentato del 4%-15%",
-        "Infliggi 7%-25% Danno per sbilanciamento del nemico",
-        "Danno sbilanciamento aumentato del 4%-15%",
-        "Velocità d'attacco aumentata del 3%-10% of durabilità attuale",
-        "Costo vigore ridotto del 7%-15%",
-        "Danno aumentato del 6%-20% per 10 secondi dopo Danno inflitto da attacco runico",
-        "Infliggi 4%-15% Danno su Danno schivato"
-      ],
-      "Focus": [
-        "Ottieni 5-15 focus su Danno schivato"
-      ],
-      "Vigore": [
-        "Costo vigore ridotto del 7%-25%",
-        "Ottieni 5-15 vigore su Danno schivato"
-      ],
-      "Salute": [
-        "Ottieni 4%-10% salute su uccisione"
-      ],
-      "Critico": [
-        "Probabilità colpo critico aumentata del 3%-10%",
-        "Danno critico aumentato del 6%-20%"
-      ],
-      "Difesa": [
-        "Ottieni 5-10 barriera su Danno schivato"
-      ]
-    },
-    "infetto": {
-      "Varie": [
-        "Durabilità aumentata del 50%-100%",
-        "Peso ridotto del 5%-10%",
-        "Carico equipaggiamento ridotto del 20%-30%",
-        "Non riparabile",
-        "Consuma focus in combattimento",
-        "Costo focus aumentato del 26%-40%",
-        "Perdi 10-15 focus per Danno subito",
-        "Prendi 20%-30% Danno qudeldo usi Focus",
-        "Consuma salute in combattimento",
-        "Attack Costo vigore aumentato del 20%-30%",
-        "Guarigione ridotta del 25%-40% se non ci sono nemici vicini",
-        "Costo vigore aumentato del 25%-40%"
-      ],
-      "Offensivo": [
-        "Danno aumentato del 5%-10%",
-        "Danno aumentato del 15%-30% contro nemici grdeldi",
-        "Rune Danno aumentato del 10%-20%",
-        "Velocità d'attacco aumentata del 5%-10% of durabilità attuale",
-        "Danno aumentato del 5%-10% of durabilità attuale",
-        "Danno aumentato del 7%-15% se non ci sono nemici vicini",
-        "Attack Danno aumentato del 10%-20% per 10 secondi dopo Danno inflitto da attacco runico",
-        "Danno aumentato del 20%-40% per 20 secondi dopo fatality",
-        "Infliggi 12%-25% Danno da sbilanciamento al nemico",
-        "Danno sbilanciamento aumentato del 20%-40% per 20 secondi dopo fatality",
-        "Infliggi 7%-15% Danno su Danno schivato"
-      ],
-      "Focus": [
-        "Ottieni 12-25 focus su colpo fatale",
-        "Ottieni 8-15 focus su uccisione"
-      ],
-      "Vigore": [
-        "Costo vigore ridotto del 15%-30% per 20 secondi dopo fatality"
-      ],
-      "Salute": [
-        "Ottieni 2%-4% salute su attacco caricato",
-        "Ottieni 1%-2% salute qudeldo infliggi Danno contro nemici congelati",
-        "Ottieni 7%-15% salute su fatality",
-        "Ottieni 5%-10% salute su uccisione",
-        "Ottieni 7%-15% salute on sbilanciamento del nemico",
-        "Ottieni 3%-5% salute su Danno schivato"
-      ],
-      "Movimento": [
-        "Velocità movimento aumentata del 7%-15% per 10 secondi dopo Danno inflitto da attacco runico"
-      ],
-      "Critico": [
-        "Probabilità colpo critico aumentata del 5%-10%",
-        "Danno critico aumentato del 10%-20%"
-      ]
-    }
-  },
-  "Elmo": {
-    "magico": {
-      "Varie": [
-        "Durabilità aumentata del 30%-100%",
-        "Peso ridotto del 3%-10%",
-        "Difesa postura aumentata di 1-3",
-        "Resistenza allo sbilanciamento aumentata del 7%-15%",
-        "Perdita di durabilità ignorata con 7%-25% chdelce"
-      ],
-      "Offensivo": [
-        "Ottieni 12%-40% spine",
-        "Ottieni 7%-15% penetrazione armatura",
-        "Danno aumentato del 4%-15% per 10 secondi dopo aver consumato cibo"
-      ],
-      "Focus": [
-        "Costo focus ridotto del 3%-10%",
-        "Guadagno focus aumentato del 4%-15%",
-        "Ottieni 5-15 focus infliggendo qualsiasi stato",
-        "Focus massimo aumentato del 7%-25%",
-        "Rigenera focus in combattimento",
-        "Guadagno focus aumentato del 4%-15% della durabilità attuale",
-        "Costo focus ridotto del 6%-20% per 10 secondi dopo Danno inflitto da attacco runico"
-      ],
-      "Elementale": [
-        "Ghiaccio Danno aumentato del 3%-10%",
-        "Fuoco Danno aumentato del 3%-10%",
-        "Fulmine Danno aumentato del 3%-10%",
-        "Fisico Danno aumentato del 3%-10%",
-        "Piaga Danno aumentato del 3%-10%"
-      ],
-      "Salute": [
-        "Ottieni 10%-25% salute recuperabile"
-      ],
-      "Critico": [
-        "Probabilità colpo critico aumentata del 3%-10%",
-        "Danno critico aumentato del 6%-20%"
-      ],
-      "Difesa": [
-        "Ottieni 3%-5% barriera on Consuming cibo",
-        "Resistenza fisica aumentata del 3%-6%",
-        "Resistenza elementale aumentata del 5%-10%",
-        "Resistenza ai danni aumentata del 3%-10% per 10 secondi dopo aver consumato cibo"
-      ]
-    },
-    "infetto": {
-      "Varie": [
-        "Durabilità aumentata del 50%-100%",
-        "Peso ridotto del 5%-10%",
-        "Non riparabile",
-        "Consuma focus in combattimento",
-        "Guadagno focus ridotto del 32%-50%",
-        "Costo focus aumentato del 26%-40%",
-        "Perdi 10-15 focus on Danno subito",
-        "Consuma salute in combattimento",
-        "Resistenza ai danni ridotta del 10%-15%",
-        "Resistenza ai danni ridotta del 21%-30% per 6 secondi dopo Danno subito",
-        "Resistenza ai danni ridotta del 26%-40% se focus non è pieno",
-        "Resistenza ai danni ridotta del 21%-30% per 10 secondi dopo aver consumato cibo",
-        "Focus massimo ridotto del 18%-25%",
-        "Salute massima ridotta del 14%-20%",
-        "Vigore massimo ridotto del 14%-20%",
-        "Costo vigore aumentato del 13%-20%",
-        "Resistenza allo sbilanciamento ridotta del 26%-40%"
-      ],
-      "Offensivo": [
-        "Ottieni 20%-40% spine",
-        "Ottieni 7%-15% penetrazione armatura"
-      ],
-      "Focus": [
-        "Costo focus ridotto del 5%-10%",
-        "Ottieni 8-15 focus infliggendo qualsiasi stato",
-        "Guadagno focus aumentato del 7%-15%",
-        "Guadagno focus aumentato del 7%-15% in base alla durabilità attuale"
-      ],
-      "Elementale": [
-        "Ghiaccio Danno aumentato del 5%-10%",
-        "Fuoco Danno aumentato del 5%-10%",
-        "Fulmine Danno aumentato del 5%-10%",
-        "Fisico Danno aumentato del 5%-10%",
-        "Piaga Danno aumentato del 5%-10%"
-      ],
-      "Salute": [
-        "Ottieni salute pari al 5%-10% of focus speso",
-        "Guarigione aumentata del 15%-30% a focus basso"
-      ],
-      "Difesa": [
-        "Resistenza elementale aumentata del 5%-10%",
-        "Resistenza fisica aumentata del 3%-6%"
-      ]
-    }
-  },
-  "Armatura": {
-    "magico": {
-      "Varie": [
-        "Durabilità aumentata del 30%-100%",
-        "Peso ridotto del 3%-10%",
-        "Difesa postura aumentata di 1-3",
-        "Resistenza allo sbilanciamento aumentata del 7%-15%",
-        "Perdita di durabilità ignorata con 7%-25% chdelce"
-      ],
-      "Offensivo": [
-        "Ottieni 12%-40% spine",
-        "Ottieni 7%-15% penetrazione armatura"
-      ],
-      "Focus": [
-        "Ottieni 3-10 focus on sbilanciamento del nemico"
-      ],
-      "Elementale": [
-        "Ghiaccio Danno aumentato del 3%-10%",
-        "Fuoco Danno aumentato del 3%-10%",
-        "Fulmine Danno aumentato del 3%-10%",
-        "Fisico Danno aumentato del 3%-10%",
-        "Piaga Danno aumentato del 3%-10%"
-      ],
-      "Salute": [
-        "Ottieni 10%-25% salute recuperabile",
-        "Guarigione aumentata del 6%-20%",
-        "Salute massima aumentata del 4%-15%"
-      ],
-      "Critico": [
-        "Probabilità colpo critico aumentata del 3%-10%",
-        "Danno critico aumentato del 6%-20%"
-      ],
-      "Difesa": [
-        "Resistenza fisica aumentata del 3%-6%",
-        "Resistenza elementale aumentata del 5%-10%",
-        "Resistenza ai danni aumentata del 6%-20% a vigore pieno",
-        "Resistenza ai danni aumentata del 2%-5% per ogni nemico vicino",
-        "Resistenza ai danni aumentata del 4%-10% of durabilità attuale"
-      ]
-    },
-    "infetto": {
-      "Critico": [
-        "Probabilità colpo critico aumentata del 5%-10%",
-        "Danno critico aumentato del 10%-20%"
-      ],
-      "Varie": [
-        "Durabilità aumentata del 50%-100%",
-        "Peso ridotto del 5%-10%",
-        "Difesa postura aumentata di 5-10 mentre carichi",
-        "Carico equipaggiamento ridotto del 20%-30%",
-        "Non riparabile",
-        "Consuma focus in combattimento",
-        "Costo focus aumentato del 26%-40%",
-        "Perdi 10-15 focus on Danno subito",
-        "Consuma salute in combattimento",
-        "Resistenza ai danni ridotta del 10%-15%",
-        "Resistenza ai danni ridotta del 21%-30% per 6 secondi dopo aver subito Danno",
-        "Resistenza ai danni ridotta del 26%-40% se focus non è pieno",
-        "Resistenza allo sbilanciamento ridotta del 26%-40%",
-        "Focus massimo ridotto del 18%-25%",
-        "Salute massima ridotta del 14%-20%",
-        "Vigore massimo ridotto del 14%-20%",
-        "Costo vigore aumentato del 13%-20%",
-        "Guarigione ridotta del 20%-30%"
-      ],
-      "Offensivo": [
-        "Ottieni 20%-40% spine",
-        "Ottieni 7%-15% penetrazione armatura",
-        "Infliggi 7%-15% danno su danno subito",
-        "Danno aumentato del 10%-20% per 10 secondi dopo sbilanciamento del nemico",
-        "nemico congelato Armatura ridotta del 15%-30%",
-        "nemico infetto Resistenza allo sbilanciamento ridotta del 15%-30%"
-      ],
-      "Focus": [
-        "Costo focus ridotto del 12%-25% per 10 secondi dopo sbilanciamento del nemico"
-      ],
-      "Elementale": [
-        "Ghiaccio Danno aumentato del 5%-10%",
-        "Fuoco Danno aumentato del 5%-10%",
-        "Fulmine Danno aumentato del 5%-10%",
-        "Fisico Danno aumentato del 5%-10%",
-        "Piaga Danno aumentato del 5%-10%",
-        "Bruciatura Danno aumentato del 25%-50%"
-      ],
-      "Salute": [
-        "Hunger Limit increased by 1",
-        "Salute massima aumentata del 5-10% del focus massimo",
-        "Rigenera salute in combattimento"
-      ],
-      "Movimento": [
-        "Velocità complessiva aumentata del 7%-15% per 10 secondi dopo inflicting stato shock"
-      ],
-      "Difesa": [
-        "Resistenza elementale aumentata del 5%-10%",
-        "Resistenza fisica aumentata del 3%-6%",
-        "Guadagno barriera aumentato del 25%-40%",
-        "Resistenza ai danni aumentata del 10%-20% mentre carichi",
-        "Resistenza ai danni aumentata del 6%-10% of durabilità attuale",
-        "Resistenza ai danni aumentata del 25%-50% per 10 secondi dopo essere stato afflitto da uno stato"
-      ]
-    }
-  },
-  "Pantaloni": {
-    "magico": {
-      "Varie": [
-        "Durabilità aumentata del 30%-100%",
-        "Peso ridotto del 3%-10%",
-        "Difesa postura aumentata di 1-3",
-        "Resistenza allo sbilanciamento aumentata del 7%-15%",
-        "Perdita di durabilità ignorata con 7%-25% chdelce"
-      ],
-      "Offensivo": [
-        "Danno aumentato del 4%-15% per 10 secondi dopo Danno schivato",
-        "Ottieni 12%-40% spine",
-        "Infliggi 4%-15% danno su danno schivato",
-        "Ottieni 7%-15% penetrazione armatura"
-      ],
-      "Focus": [
-        "Ottieni 5-15 focus su Danno schivato"
-      ],
-      "Vigore": [
-        "Costo vigore ridotto del 4%-15%",
-        "Costo vigore ridotto del 7%-25%",
-        "Ottieni 5-15 vigore su Danno schivato",
-        "Recupero vigore aumentato del 6%-20%",
-        "Recupero vigore aumentato del 6%-20% of durabilità attuale"
-      ],
-      "Elementale": [
-        "Ghiaccio Danno aumentato del 3%-10%",
-        "Fuoco Danno aumentato del 3%-10%",
-        "Fulmine Danno aumentato del 3%-10%",
-        "Fisico Danno aumentato del 3%-10%"
-      ],
-      "Salute": [
-        "Ottieni 10%-25% salute recuperabile"
-      ],
-      "Movimento": [
-        "Velocità movimento aumentata del 3%-10%",
-        "Velocità movimento aumentata del 7%-15% per 20 secondi dopo uccisione"
-      ],
-      "Critico": [
-        "Probabilità colpo critico aumentata del 3%-10%",
-        "Danno critico aumentato del 6%-20%"
-      ],
-      "Difesa": [
-        "Resistenza fisica aumentata del 3%-6%",
-        "Resistenza elementale aumentata del 5%-10%",
-        "Ottieni 5-10 barriera su danno schivato"
-      ]
-    },
-    "infetto": {
-      "Varie": [
-        "Durabilità aumentata del 50%-100%",
-        "Peso ridotto del 5%-10%",
-        "Difesa postura aumentata di 5-10 mentre carichi",
-        "Carico equipaggiamento ridotto del 20%-30%",
-        "Non riparabile",
-        "Resistenza ai danni ridotta del 10%-15%",
-        "Resistenza ai danni ridotta del 21%-30% per 6 secondi dopo aver subito Danno",
-        "Consuma focus in combattimento",
-        "Consuma salute in combattimento",
-        "Perdi 10-15 focus on Danno subito",
-        "Resistenza ai danni ridotta del 26%-40% se focus non è pieno",
-        "Resistenza allo sbilanciamento ridotta del 26%-40%",
-        "Costo focus aumentato del 26%-40%",
-        "Focus massimo ridotto del 18%-25%",
-        "Salute massima ridotta del 14%-20%",
-        "Vigore massimo ridotto del 14%-20%",
-        "Costo vigore aumentato del 25%-40%",
-        "Costo vigore aumentato del 13%-20%",
-        "Velocità movimento ridotta del 7%-25%",
-        "Solo rotolata pesante"
-      ],
-      "Offensivo": [
-        "Ottieni 20%-40% spine",
-        "Ottieni 7%-15% penetrazione armatura",
-        "Infliggi 7%-15% danno su danno schivato",
-        "Danno aumentato del 5%-10% dopo aver scattato per 4 secondi"
-      ],
-      "Vigore": [
-        "Recupero vigore aumentato del 10%-20% della durabilità attuale",
-        "Costo vigore ridotto del 10%-20% con focus basso"
-      ],
-      "Elementale": [
-        "Ghiaccio Danno aumentato del 5%-10%",
-        "Fuoco Danno aumentato del 5%-10%",
-        "Fulmine Danno aumentato del 5%-10%",
-        "Fisico Danno aumentato del 5%-10%",
-        "Piaga Danno aumentato del 5%-10%"
-      ],
-      "Salute": [
-        "Ottieni 3%-5% salute su danno schivato",
-        "Vigore massimo aumentato del 2-5% del focus massimo"
-      ],
-      "Movimento": [
-        "Velocità movimento aumentata del 7%-15% per 5 secondi dopo danno inflitto da attacco caricato"
-      ],
-      "Critico": [
-        "Probabilità colpo critico aumentata del 5%-10%",
-        "Danno critico aumentato del 10%-20%"
-      ],
-      "Difesa": [
-        "Resistenza elementale aumentata del 5%-10%",
-        "Resistenza fisica aumentata del 3%-6%"
-      ]
-    }
-  },
-  "Guanti": {
-    "magico": {
-      "Varie": [
-        "Durabilità aumentata del 30%-100%",
-        "Peso ridotto del 3%-10%",
-        "Difesa postura aumentata di 1-3",
-        "Resistenza allo sbilanciamento aumentata del 7%-15%",
-        "Perdita di durabilità ignorata con 7%-25% chdelce"
-      ],
-      "Offensivo": [
-        "Ottieni 12%-40% spine",
-        "Infliggi 7%-25% Damage su parata",
-        "Danno aumentato del 4%-15% per 4 secondi dopo danno inflitto da attacco caricato",
-        "Danno sbilanciamento aumentato del 6%-20% per 4 secondi dopo danno inflitto da attacco caricato",
-        "Ottieni 7%-15% penetrazione armatura"
-      ],
-      "Focus": [
-        "Ottieni 5-15 focus su parata"
-      ],
-      "Vigore": [
-        "Ottieni 9-30 vigore su parata"
-      ],
-      "Elementale": [
-        "Ghiaccio Danno aumentato del 3%-10%",
-        "Fuoco Danno aumentato del 3%-10%",
-        "Fulmine Danno aumentato del 3%-10%",
-        "Fisico Danno aumentato del 3%-10%",
-        "Piaga Danno aumentato del 3%-10%"
-      ],
-      "Salute": [
-        "Ottieni 4%-10% salute su uccisione",
-        "Ottieni 10%-25% salute recuperabile",
-        "Guarigione aumentata del 4%-15% della durabilità attuale"
-      ],
-      "Critico": [
-        "Probabilità colpo critico aumentata del 3%-10%",
-        "Danno critico aumentato del 6%-20%"
-      ],
-      "Difesa": [
-        "Resistenza fisica aumentata del 3%-6%",
-        "Resistenza elementale aumentata del 5%-10%",
-        "Ottieni 8-15 barriera su parata"
-      ]
-    },
-    "infetto": {
-      "Varie": [
-        "Durabilità aumentata del 50%-100%",
-        "Peso ridotto del 5%-10%",
-        "Carico equipaggiamento ridotto del 20%-30%",
-        "Non riparabile",
-        "Resistenza ai danni ridotta del 10%-15%",
-        "Resistenza ai danni ridotta del 21%-30% per 6 secondi dopo aver subito Danno",
-        "Resistenza ai danni ridotta del 26%-40% se focus non è pieno",
-        "Resistenza allo sbilanciamento ridotta del 26%-40%",
-        "Consuma focus in combattimento",
-        "Consuma salute in combattimento",
-        "Perdi 10-15 focus on Danno subito",
-        "Costo focus aumentato del 26%-40%",
-        "Focus massimo ridotto del 18%-25%",
-        "Salute massima ridotta del 14%-20%",
-        "Vigore massimo ridotto del 14%-20%",
-        "Costo vigore aumentato del 13%-20%",
-        "Attack Costo vigore aumentato del 20%-30%",
-        "Parata disabilitata"
-      ],
-      "Offensivo": [
-        "Ottieni 20%-40% spine",
-        "Ottieni 7%-15% penetrazione armatura",
-        "attacco caricato Danno aumentato del 10%-20%",
-        "Infliggi 12%-25% Damage su parata",
-        "Normal Attack Danno aumentato del 12%-25% per 5 secondi dopo danno inflitto da attacco caricato",
-        "Execute Infected Low Salute nemici on Damage Infliggit",
-        "Danno aumentato del 7%-15% per 10 secondi dopo parata"
-      ],
-      "Vigore": [
-        "Ottieni 20-40 vigore on sbilanciamento del nemico"
-      ],
-      "Elementale": [
-        "Ghiaccio Danno aumentato del 5%-10%",
-        "Fuoco Danno aumentato del 5%-10%",
-        "Fulmine Danno aumentato del 5%-10%",
-        "Fisico Danno aumentato del 5%-10%",
-        "Piaga Danno aumentato del 5%-10%",
-        "Accumulo bruciatura aumentato del 10%-20%",
-        "Accumulo gelo aumentato del 10%-20%",
-        "Accumulo infezione aumentato del 10%-20%",
-        "Accumulo shock aumentato del 10%-20%"
-      ],
-      "Salute": [
-        "Ottieni 5%-10% salute su uccisione",
-        "Ottieni 7%-15% salute on sbilanciamento del nemico",
-        "Guarigione aumentata del 7%-15% of durabilità attuale",
-        "Ottieni 10%-20% furto vitale contro nemici sdelguindelti",
-        "Ottieni 5%-10% salute su parata"
-      ],
-      "Critico": [
-        "Probabilità colpo critico aumentata del 5%-10%",
-        "Danno critico aumentato del 10%-20%",
-        "Probabilità colpo critico aumentata del 10%-20% contro nemici in fiamme"
-      ],
-      "Difesa": [
-        "Resistenza elementale aumentata del 5%-10%",
-        "Resistenza fisica aumentata del 3%-6%"
-      ]
-    }
-  }
-};
-const ICONS = {
-  Arma: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <line x1="8" y1="52" x2="44" y2="16" stroke="#c9a84c" stroke-width="3" stroke-linecap="round"/>
-    <line x1="44" y1="16" x2="52" y2="8" stroke="#c9a84c" stroke-width="4" stroke-linecap="round"/>
-    <line x1="22" y1="38" x2="38" y2="22" stroke="#e8dcc8" stroke-width="5" stroke-linecap="round"/>
-    <line x1="34" y1="26" x2="26" y2="34" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
-    <circle cx="10" cy="50" r="4" fill="#7d6530"/>
-    <line x1="30" y1="30" x2="16" y2="44" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
-  </svg>`,
-  Scudo: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M30 6 L52 16 L52 32 C52 44 30 56 30 56 C30 56 8 44 8 32 L8 16 Z" stroke="#c9a84c" stroke-width="2.5" fill="rgba(201,168,76,0.08)"/>
-    <path d="M30 12 L46 20 L46 32 C46 41 30 50 30 50 C30 50 14 41 14 32 L14 20 Z" fill="rgba(201,168,76,0.05)" stroke="#7d6530" stroke-width="1"/>
-    <line x1="30" y1="14" x2="30" y2="48" stroke="#c9a84c" stroke-width="1.5" opacity="0.5"/>
-    <line x1="15" y1="32" x2="45" y2="32" stroke="#c9a84c" stroke-width="1.5" opacity="0.5"/>
-  </svg>`,
-  Arco: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M48 8 C48 8 54 30 48 52" stroke="#c9a84c" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-    <line x1="48" y1="8" x2="48" y2="52" stroke="#7d6530" stroke-width="1" stroke-dasharray="3,3"/>
-    <line x1="18" y1="30" x2="46" y2="30" stroke="#e8dcc8" stroke-width="1.5" stroke-linecap="round"/>
-    <polygon points="46,30 40,27 40,33" fill="#c9a84c"/>
-    <line x1="18" y1="30" x2="13" y2="25" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
-    <line x1="18" y1="30" x2="13" y2="35" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
-    <line x1="18" y1="30" x2="13" y2="30" stroke="#c9a84c" stroke-width="1" stroke-linecap="round"/>
-  </svg>`,
-  Elmo: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 40 C12 24 20 12 30 12 C40 12 48 24 48 40" stroke="#c9a84c" stroke-width="2.5" fill="rgba(201,168,76,0.07)" stroke-linecap="round"/>
-    <path d="M8 40 L52 40" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
-    <path d="M8 40 L8 46 L52 46 L52 40" stroke="#7d6530" stroke-width="1.5" fill="rgba(201,168,76,0.05)"/>
-    <line x1="20" y1="40" x2="40" y2="40" stroke="#e8dcc8" stroke-width="1.5"/>
-    <rect x="24" y="32" width="12" height="8" rx="1" stroke="#c9a84c" stroke-width="1.5" fill="rgba(0,0,0,0.3)"/>
-  </svg>`,
-  Armatura: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M20 10 L10 18 L10 38 L20 44 L30 46 L40 44 L50 38 L50 18 L40 10 L30 8 Z" stroke="#c9a84c" stroke-width="2.5" fill="rgba(201,168,76,0.07)"/>
-    <path d="M20 10 L20 18 L10 18" stroke="#7d6530" stroke-width="1.5"/>
-    <path d="M40 10 L40 18 L50 18" stroke="#7d6530" stroke-width="1.5"/>
-    <path d="M20 44 L20 52 M40 44 L40 52" stroke="#c9a84c" stroke-width="2" stroke-linecap="round"/>
-    <line x1="10" y1="26" x2="50" y2="26" stroke="#7d6530" stroke-width="1" opacity="0.6"/>
-    <circle cx="30" cy="22" r="4" stroke="#c9a84c" stroke-width="1.5" fill="none"/>
-    <line x1="20" y1="10" x2="40" y2="10" stroke="#c9a84c" stroke-width="2"/>
-  </svg>`,
-  Pantaloni: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M14 8 L14 32 L24 52 L30 52 L30 32" stroke="#c9a84c" stroke-width="2.5" fill="rgba(201,168,76,0.07)" stroke-linejoin="round"/>
-    <path d="M46 8 L46 32 L36 52 L30 52 L30 32" stroke="#c9a84c" stroke-width="2.5" fill="rgba(201,168,76,0.07)" stroke-linejoin="round"/>
-    <line x1="14" y1="8" x2="46" y2="8" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="14" y1="20" x2="46" y2="20" stroke="#7d6530" stroke-width="1" opacity="0.6"/>
-    <line x1="14" y1="32" x2="46" y2="32" stroke="#7d6530" stroke-width="1" opacity="0.4"/>
-  </svg>`,
-  Guanti: `<svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M18 42 L18 26 L14 20 L14 14 L18 14 L18 22 L20 22 L20 12 L24 12 L24 22 L26 22 L26 14 L30 14 L30 22 L32 22 L32 16 L36 16 L36 26 L42 26 L42 30 L36 32 L36 42" stroke="#c9a84c" stroke-width="2" fill="rgba(201,168,76,0.07)" stroke-linejoin="round" stroke-linecap="round"/>
-    <line x1="14" y1="42" x2="42" y2="42" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round"/>
-    <line x1="16" y1="46" x2="40" y2="46" stroke="#7d6530" stroke-width="1.5" stroke-linecap="round"/>
-  </svg>`
+const ICON_FILES = {
+  Arma: 'icons/arma.png',
+  Scudo: 'icons/scudo.png',
+  Arco: 'icons/arco.png',
+  Elmo: 'icons/elmo.png',
+  Armatura: 'icons/armatura.png',
+  Pantaloni: 'icons/pantaloni.png',
+  Guanti: 'icons/guanti.png'
 };
 
 const CAT_COLORS = {
-  Varie: '#7a6a55', Offensivo: '#c0392b', Vigore: '#27ae60',
-  Salute: '#e74c3c', Critico: '#f39c12', Difesa: '#2980b9',
-  Focus: '#8e44ad', Elementale: '#16a085', Movimento: '#d35400'
+  Varie: '#9a8a70', Offensivo: '#d9483a', Vigore: '#2ecc71',
+  Salute: '#ff5c4d', Critico: '#f5a623', Difesa: '#3498db',
+  Focus: '#a55ad1', Elementale: '#1abc9c', Movimento: '#e67e22'
 };
 
 const CAT_ORDER = ['Varie','Offensivo','Vigore','Salute','Critico','Difesa','Focus','Elementale','Movimento'];
+
+let DATA = {};
 
 function countEnch(item) {
   const d = DATA[item];
@@ -1201,18 +435,20 @@ function countEnch(item) {
 
 function buildHome() {
   const grid = document.getElementById('equip-grid');
+  grid.innerHTML = '';
   Object.keys(DATA).forEach(item => {
     const {m, i} = countEnch(item);
     const card = document.createElement('a');
     card.className = 'equip-card';
     card.href = '#';
+    const iconSrc = ICON_FILES[item] || '';
     card.innerHTML = `
-      <div class="equip-icon">${ICONS[item] || ''}</div>
+      <div class="equip-icon"><img src="${iconSrc}" alt="${item}"></div>
       <div class="equip-name">${item}</div>
-      <div class="equip-count">${m + i} Incantamenti totali</div>
+      <div class="equip-count">${m + i} incantamenti totali</div>
       <div class="badge-pair">
-        <spdel class="badge m">✦ ${m} magici</spdel>
-        <spdel class="badge i">✦ ${i} infetti</spdel>
+        <span class="badge m">✦ ${m} magici</span>
+        <span class="badge i">✦ ${i} infetti</span>
       </div>
     `;
     card.addEventListener('click', e => { e.preventDefault(); showItem(item); });
@@ -1225,16 +461,17 @@ function buildItemPage(item) {
   const div = document.createElement('div');
   div.className = 'item-page';
   div.id = `page-${item}`;
+  const iconSrc = ICON_FILES[item] || '';
 
   function buildSection(type, label, cls) {
     const cats = data[type] || {};
     const ordered = CAT_ORDER.filter(c => cats[c] && cats[c].length > 0);
-    if (ordered.length === 0) return `<div class="empty-state">Nessun incdeltamento ${label} disponibile per questo equipaggiamento.</div>`;
+    if (ordered.length === 0) return `<div class="empty-state">Nessun incantamento ${label.toLowerCase()} disponibile per questo equipaggiamento.</div>`;
 
     let html = `<div class="type-heading ${cls}">${label.toUpperCase()}</div>`;
     html += `<div class="cat-legend">`;
     ordered.forEach(cat => {
-      html += `<spdel class="cat-legend-item"><spdel class="cat-legend-dot" style="background:${CAT_COLORS[cat]}"></spdel>${cat}</spdel>`;
+      html += `<span class="cat-legend-item"><span class="cat-legend-dot" style="background:${CAT_COLORS[cat]}"></span>${cat}</span>`;
     });
     html += `</div>`;
 
@@ -1243,8 +480,8 @@ function buildItemPage(item) {
       html += `<div class="cat-section cat-${cat}">
         <div class="cat-header">
           <div class="cat-bar"></div>
-          <spdel class="cat-label">${cat}</spdel>
-          <spdel class="cat-count">${enchs.length} Incantamenti</spdel>
+          <span class="cat-label">${cat}</span>
+          <span class="cat-count">${enchs.length} incantamenti</span>
         </div>
         <div class="ench-list">
           ${enchs.map(e => `<div class="ench-item">${e}</div>`).join('')}
@@ -1257,8 +494,8 @@ function buildItemPage(item) {
   div.innerHTML = `
     <div class="item-header">
       <button class="back-btn" onclick="showHome()">← TUTTI</button>
-      <spdel class="item-header-name">${item}</spdel>
-      <spdel class="item-header-icon">${ICONS[item] || ''}</spdel>
+      <span class="item-header-name">${item}</span>
+      <span class="item-header-icon"><img src="${iconSrc}" alt="${item}"></span>
     </div>
     <div class="item-content">
       <div class="type-tabs">
@@ -1296,9 +533,16 @@ function showHome() {
   window.scrollTo(0, 0);
 }
 
-// Init
-Object.keys(DATA).forEach(item => buildItemPage(item));
-buildHome();
+fetch('enchantments.json')
+  .then(r => r.json())
+  .then(json => {
+    DATA = json;
+    Object.keys(DATA).forEach(item => buildItemPage(item));
+    buildHome();
+  })
+  .catch(err => {
+    document.getElementById('equip-grid').innerHTML = '<div class="loading-msg">Errore nel caricamento dei dati: ' + err.message + '</div>';
+  });
 </script>
 </body>
 </html>
