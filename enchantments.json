@@ -9,29 +9,29 @@
         "Danno aumentato del 15%-30% per 30 secondi dopo colpo alle spalle"
       ],
       "Offensivo": [
-        "Attack Danno aumentato del 4%-15%",
+        "Danno d'attacco aumentato del 4%-15%",
         "Danno aumentato del 3%-10%",
-        "Attack Danno aumentato del 6%-20% per 10 secondi after Damage Infliggit by attacco runico",
+        "Danno d'attacco aumentato del 6%-20% per 10 secondi dopo danno inflitto con attacco runico",
         "Danno aumentato del 2%-5% per ogni nemico vicino",
-        "Infliggi 7%-25% Damage on sbilanciamento an nemico",
-        "Rune Danno aumentato del 4%-15%",
+        "Infliggi 7%-25% di danno sbilanciando un nemico",
+        "Danno da rune aumentato del 4%-15%",
         "Danno sbilanciamento aumentato del 4%-15%",
-        "Velocità d’attacco aumentata del 3%-10% of durabilità attuale",
-        "Danno aumentato del 3%-10% of durabilità attuale",
-        "Attack Costo vigore ridotto del 7%-15%"
+        "Velocità d’attacco aumentata del 3%-10% della durabilità attuale",
+        "Danno aumentato del 3%-10% della durabilità attuale",
+        "Costo vigore d'attacco ridotto del 7%-15%"
       ],
       "Vigore": [
-        "Attack Costo vigore ridotto del 7%-25% per 10 secondi dopo parata"
+        "Costo vigore d'attacco ridotto del 7%-25% per 10 secondi dopo una parata"
       ],
       "Salute": [
-        "Ottieni 4%-10% salute su uccisione"
+        "Ottieni 4%-10% salute con uccisione"
       ],
       "Critico": [
         "Probabilità colpo critico aumentata del 3%-10%",
-        "Critical Danno aumentato del 6%-20%"
+        "Danno critico aumentato del 6%-20%"
       ],
       "Difesa": [
-        "Ottieni 12%-25% barriera su uccisione"
+        "Ottieni 12%-25% barriera con uccisione"
       ]
     },
     "infetto": {
@@ -45,44 +45,44 @@
         "Non riparabile",
         "Consuma focus in combattimento",
         "Costo focus aumentato del 26%-40%",
-        "Perdi 10-15 focus on danno subito",
-        "Take 20%-30% Damage on Focus Use",
+        "Perdi 10-15 focus quando subisci danno",
+        "Prendi 20%-30% danno quando usi focus",
         "Consuma salute in combattimento",
-        "Attack Costo vigore aumentato del 20%-30%",
+        "Costo vigore d'attacco aumentato del 20%-30%",
         "Guarigione ridotta del 15%-25% per ogni nemico vicino"
       ],
       "Offensivo": [
         "Danno aumentato del 5%-10%",
         "Danno aumentato del 15%-30% contro nemici grandi",
-        "Danno aumentato del 5%-10% of durabilità attuale",
-        "Danno aumentato del 20%-40% per 20 secondi dopo fatality",
-        "Attack Danno aumentato del 10%-20% per 10 secondi after Damage Infliggit by attacco runico",
-        "Infliggi 12%-25% Damage on sbilanciamento an nemico",
-        "Rune Danno aumentato del 10%-20%",
-        "Velocità d’attacco aumentata del 5%-10% of durabilità attuale",
-        "Danno sbilanciamento aumentato del 20%-40% per 20 secondi dopo fatality"
+        "Danno aumentato del 5%-10% della durabilità attuale",
+        "Danno aumentato del 20%-40% per 20 secondi dopo un colpo fatale",
+        "Danno d'attacco aumentato del 10%-20% per 10 secondi dopo danno inflitto con attacco runico",
+        "Infliggi 12%-25% di danno sbilanciando un nemico",
+        "Danno da rune aumentato del 10%-20%",
+        "Velocità d’attacco aumentata del 5%-10% della durabilità attuale",
+        "Danno sbilanciamento aumentato del 20%-40% per 20 secondi dopo un colpo fatale"
       ],
       "Focus": [
-        "Ottieni 12-25 focus su fatality",
-        "Ottieni 8-15 focus su uccisione"
+        "Ottieni 12-25 focus con un colpo fatale",
+        "Ottieni 8-15 focus con uccisione"
       ],
       "Vigore": [
-        "Costo vigore ridotto del 15%-30% per 20 secondi dopo fatality",
-        "Attack Costo vigore ridotto del 12%-25% per 10 secondi dopo parata"
+        "Costo vigore ridotto del 15%-30% per 20 secondi dopo un colpo fatale",
+        "Costo vigore d'attacco ridotto del 12%-25% per 10 secondi dopo una parata"
       ],
       "Salute": [
-        "Ottieni 2%-4% salute su attacco caricato",
-        "Ottieni 1%-2% salute on Damage Infliggit contro nemici congelati",
-        "Ottieni 7%-15% salute su fatality",
-        "Ottieni 5%-10% salute su uccisione",
-        "Ottieni 7%-15% salute on sbilanciamento an nemico"
+        "Ottieni 2%-4% salute con un attacco caricato",
+        "Ottieni 1%-2% salute con danno inflitto contro nemici congelati",
+        "Ottieni 7%-15% salute con un colpo fatale",
+        "Ottieni 5%-10% salute con uccisione",
+        "Ottieni 7%-15% salute con lo sbilanciamento del nemico"
       ],
       "Movimento": [
-        "Velocità movimento aumentata del 7%-15% per 10 secondi after Damage Infliggit by attacco runico"
+        "Velocità movimento aumentata del 7%-15% per 10 secondi dopo danno inflitto con attacco runico"
       ],
       "Critico": [
         "Probabilità colpo critico aumentata del 5%-10%",
-        "Critical Danno aumentato del 10%-20%"
+        "Danno critico aumentato del 10%-20%"
       ]
     }
   },
@@ -93,10 +93,10 @@
         "Peso ridotto del 3%-10%"
       ],
       "Offensivo": [
-        "Gain 12%-40% spine",
-        "Danno aumentato del 5%-15% per 10 secondi dopo parata",
-        "Infliggi 7%-25% Damage su parata",
-        "Infliggi 5%-15% Damage su blocco",
+        "Ottieni 12%-40% spine",
+        "Danno aumentato del 5%-15% per 10 secondi dopo una parata",
+        "Infliggi 7%-25% danno con parata",
+        "Infliggi 5%-15% danno su blocco",
         "Danno aumentato del 7%-15% per 10 secondi dopo blocco"
       ],
       "Focus": [
@@ -120,19 +120,19 @@
         "Non riparabile",
         "Consuma focus in combattimento",
         "Costo focus aumentato del 26%-40%",
-        "Perdi 10-15 focus on danno subito",
+        "Perdi 10-15 focus quando subisci danno",
         "Consuma salute in combattimento",
         "Blocco disabilitato"
       ],
       "Offensivo": [
-        "Gain 20%-40% spine",
-        "Infliggi 7%-15% Damage su blocco",
+        "Ottieni 20%-40% spine",
+        "Infliggi 7%-15% danno su blocco",
         "Danno aumentato del 7%-15% per 10 secondi dopo blocco",
-        "Infliggi 12%-25% Damage su parata",
-        "Danno aumentato del 7%-15% per 10 secondi dopo parata"
+        "Infliggi 12%-25% danno con parata",
+        "Danno aumentato del 7%-15% per 10 secondi dopo una parata"
       ],
       "Salute": [
-        "Ottieni 5%-10% salute su parata"
+        "Ottieni 5%-10% salute con la parata"
       ],
       "Movimento": [
         "Resistenza ai danni aumentata del 7%-15% mentre blocchi"
@@ -147,35 +147,35 @@
         "Peso ridotto del 3%-10%"
       ],
       "Offensivo": [
-        "Attack Danno aumentato del 4%-15%",
-        "Danno aumentato del 3%-10% of durabilità attuale",
-        "Danno aumentato del 4%-15% per 10 secondi dopo danno schivato",
-        "Infliggi 4%-15% Damage su danno schivato",
+        "Danno d'attacco aumentato del 4%-15%",
+        "Danno aumentato del 3%-10% della durabilità attuale",
+        "Danno aumentato del 4%-15% per 10 secondi dopo un danno schivato",
+        "Infliggi 4%-15% danno su un danno schivato",
         "Danno aumentato del 3%-10%",
-        "Rune Danno aumentato del 4%-15%",
-        "Infliggi 7%-25% Damage on sbilanciamento an nemico",
+        "Danno da rune aumentato del 4%-15%",
+        "Infliggi 7%-25% di danno sbilanciando un nemico",
         "Danno sbilanciamento aumentato del 4%-15%",
-        "Velocità d’attacco aumentata del 3%-10% of durabilità attuale",
-        "Attack Costo vigore ridotto del 7%-15%",
-        "Attack Danno aumentato del 6%-20% per 10 secondi after Damage Infliggit by attacco runico",
-        "Infliggi 4%-15% Damage su danno schivato"
+        "Velocità d’attacco aumentata del 3%-10% della durabilità attuale",
+        "Costo vigore d'attacco ridotto del 7%-15%",
+        "Danno d'attacco aumentato del 6%-20% per 10 secondi dopo danno inflitto con attacco runico",
+        "Infliggi 4%-15% danno su un danno schivato"
       ],
       "Focus": [
-        "Ottieni 5-15 focus su danno schivato"
+        "Ottieni 5-15 focus su un danno schivato"
       ],
       "Vigore": [
         "Dodge Costo vigore ridotto del 7%-25%",
-        "Ottieni 5-15 vigore su danno schivato"
+        "Ottieni 5-15 vigore su un danno schivato"
       ],
       "Salute": [
-        "Ottieni 4%-10% salute su uccisione"
+        "Ottieni 4%-10% salute con uccisione"
       ],
       "Critico": [
         "Probabilità colpo critico aumentata del 3%-10%",
-        "Critical Danno aumentato del 6%-20%"
+        "Danno critico aumentato del 6%-20%"
       ],
       "Difesa": [
-        "Ottieni 5-10 barriera su danno schivato"
+        "Ottieni 5-10 barriera su un danno schivato"
       ]
     },
     "infetto": {
@@ -186,47 +186,47 @@
         "Non riparabile",
         "Consuma focus in combattimento",
         "Costo focus aumentato del 26%-40%",
-        "Perdi 10-15 focus on danno subito",
-        "Take 20%-30% Damage on Focus Use",
+        "Perdi 10-15 focus quando subisci danno",
+        "Prendi 20%-30% danno quando usi focus",
         "Consuma salute in combattimento",
-        "Attack Costo vigore aumentato del 20%-30%",
+        "Costo vigore d'attacco aumentato del 20%-30%",
         "Guarigione ridotta del 25%-40% se non ci sono nemici vicini",
         "Dodge Costo vigore aumentato del 25%-40%"
       ],
       "Offensivo": [
         "Danno aumentato del 5%-10%",
         "Danno aumentato del 15%-30% contro nemici grandi",
-        "Rune Danno aumentato del 10%-20%",
-        "Velocità d’attacco aumentata del 5%-10% of durabilità attuale",
-        "Danno aumentato del 5%-10% of durabilità attuale",
+        "Danno da rune aumentato del 10%-20%",
+        "Velocità d’attacco aumentata del 5%-10% della durabilità attuale",
+        "Danno aumentato del 5%-10% della durabilità attuale",
         "Danno aumentato del 7%-15% se non ci sono nemici vicini",
-        "Attack Danno aumentato del 10%-20% per 10 secondi after Damage Infliggit by attacco runico",
-        "Danno aumentato del 20%-40% per 20 secondi dopo fatality",
-        "Infliggi 12%-25% Damage on sbilanciamento an nemico",
-        "Danno sbilanciamento aumentato del 20%-40% per 20 secondi dopo fatality",
-        "Infliggi 7%-15% Damage su danno schivato"
+        "Danno d'attacco aumentato del 10%-20% per 10 secondi dopo danno inflitto con attacco runico",
+        "Danno aumentato del 20%-40% per 20 secondi dopo un colpo fatale",
+        "Infliggi 12%-25% di danno sbilanciando un nemico",
+        "Danno sbilanciamento aumentato del 20%-40% per 20 secondi dopo un colpo fatale",
+        "Infliggi 7%-15% danno su un danno schivato"
       ],
       "Focus": [
-        "Ottieni 12-25 focus su fatality",
-        "Ottieni 8-15 focus su uccisione"
+        "Ottieni 12-25 focus con un colpo fatale",
+        "Ottieni 8-15 focus con uccisione"
       ],
       "Vigore": [
-        "Costo vigore ridotto del 15%-30% per 20 secondi dopo fatality"
+        "Costo vigore ridotto del 15%-30% per 20 secondi dopo un colpo fatale"
       ],
       "Salute": [
-        "Ottieni 2%-4% salute su attacco caricato",
-        "Ottieni 1%-2% salute on Damage Infliggit contro nemici congelati",
-        "Ottieni 7%-15% salute su fatality",
-        "Ottieni 5%-10% salute su uccisione",
-        "Ottieni 7%-15% salute on sbilanciamento an nemico",
-        "Ottieni 3%-5% salute su danno schivato"
+        "Ottieni 2%-4% salute con un attacco caricato",
+        "Ottieni 1%-2% salute con danno inflitto contro nemici congelati",
+        "Ottieni 7%-15% salute con un colpo fatale",
+        "Ottieni 5%-10% salute con uccisione",
+        "Ottieni 7%-15% salute con lo sbilanciamento del nemico",
+        "Ottieni 3%-5% salute su un danno schivato"
       ],
       "Movimento": [
-        "Velocità movimento aumentata del 7%-15% per 10 secondi after Damage Infliggit by attacco runico"
+        "Velocità movimento aumentata del 7%-15% per 10 secondi dopo danno inflitto con attacco runico"
       ],
       "Critico": [
         "Probabilità colpo critico aumentata del 5%-10%",
-        "Critical Danno aumentato del 10%-20%"
+        "Danno critico aumentato del 10%-20%"
       ]
     }
   },
@@ -237,11 +237,11 @@
         "Peso ridotto del 3%-10%",
         "Difesa postura aumentata di 1-3",
         "Resistenza allo sbilanciamento aumentata del 7%-15%",
-        "Perdita di durabilità ignorata con 7%-25% chance"
+        "Perdita di durabilità ignorata con probabilità 7%-25%"
       ],
       "Offensivo": [
-        "Gain 12%-40% spine",
-        "Gain 7%-15% penetrazione armatura",
+        "Ottieni 12%-40% spine",
+        "Ottieni 7%-15% penetrazione armatura",
         "Danno aumentato del 4%-15% per 10 secondi dopo aver consumato cibo"
       ],
       "Focus": [
@@ -250,8 +250,8 @@
         "Ottieni 5-15 focus infliggendo qualsiasi stato",
         "Focus massimo aumentato del 7%-25%",
         "Rigenera focus in combattimento",
-        "Guadagno focus aumentato del 4%-15% of durabilità attuale",
-        "Costo focus ridotto del 6%-20% per 10 secondi after Damage Infliggit by attacco runico"
+        "Guadagno focus aumentato del 4%-15% della durabilità attuale",
+        "Costo focus ridotto del 6%-20% per 10 secondi dopo danno inflitto con attacco runico"
       ],
       "Elementale": [
         "Ghiaccio Danno aumentato del 3%-10%",
@@ -261,11 +261,11 @@
         "Piaga Danno aumentato del 3%-10%"
       ],
       "Salute": [
-        "Gain 10%-25% salute recuperabile"
+        "Ottieni 10%-25% salute recuperabile"
       ],
       "Critico": [
         "Probabilità colpo critico aumentata del 3%-10%",
-        "Critical Danno aumentato del 6%-20%"
+        "Danno critico aumentato del 6%-20%"
       ],
       "Difesa": [
         "Ottieni 3%-5% barriera on Consuming cibo",
@@ -282,11 +282,11 @@
         "Consuma focus in combattimento",
         "Guadagno focus ridotto del 32%-50%",
         "Costo focus aumentato del 26%-40%",
-        "Perdi 10-15 focus on danno subito",
+        "Perdi 10-15 focus quando subisci danno",
         "Consuma salute in combattimento",
         "Resistenza ai danni ridotta del 10%-15%",
-        "Resistenza ai danni ridotta del 21%-30% per 6 secondi after danno subito",
-        "Resistenza ai danni ridotta del 26%-40% se non ci sonot a focus pieno",
+        "Resistenza ai danni ridotta del 21%-30% per 6 secondi dopo aver subito danno",
+        "Resistenza ai danni ridotta del 26%-40% se focus non è pieno",
         "Resistenza ai danni ridotta del 21%-30% per 10 secondi dopo aver consumato cibo",
         "Focus massimo ridotto del 18%-25%",
         "Salute massima ridotta del 14%-20%",
@@ -295,8 +295,8 @@
         "Resistenza allo sbilanciamento ridotta del 26%-40%"
       ],
       "Offensivo": [
-        "Gain 20%-40% spine",
-        "Gain 7%-15% penetrazione armatura"
+        "Ottieni 20%-40% spine",
+        "Ottieni 7%-15% penetrazione armatura"
       ],
       "Focus": [
         "Costo focus ridotto del 5%-10%",
@@ -312,8 +312,8 @@
         "Piaga Danno aumentato del 5%-10%"
       ],
       "Salute": [
-        "Ottieni salute pari al 5%-10% of focus speso",
-        "Guarigione aumentata del 15%-30% a focus basso"
+        "Ottieni salute pari al 5%-10% al focus speso",
+        "Guarigione aumentata del 15%-30% con focus basso"
       ],
       "Difesa": [
         "Resistenza elementale aumentata del 5%-10%",
@@ -328,14 +328,14 @@
         "Peso ridotto del 3%-10%",
         "Difesa postura aumentata di 1-3",
         "Resistenza allo sbilanciamento aumentata del 7%-15%",
-        "Perdita di durabilità ignorata con 7%-25% chance"
+        "Perdita di durabilità ignorata con probabilità 7%-25%"
       ],
       "Offensivo": [
-        "Gain 12%-40% spine",
-        "Gain 7%-15% penetrazione armatura"
+        "Ottieni 12%-40% spine",
+        "Ottieni 7%-15% penetrazione armatura"
       ],
       "Focus": [
-        "Ottieni 3-10 focus on sbilanciamento an nemico"
+        "Ottieni 3-10 focus con lo sbilanciamento del nemico"
       ],
       "Elementale": [
         "Ghiaccio Danno aumentato del 3%-10%",
@@ -345,28 +345,28 @@
         "Piaga Danno aumentato del 3%-10%"
       ],
       "Salute": [
-        "Gain 10%-25% salute recuperabile",
+        "Ottieni 10%-25% salute recuperabile",
         "Guarigione aumentata del 6%-20%",
         "Salute massima aumentata del 4%-15%"
       ],
       "Critico": [
         "Probabilità colpo critico aumentata del 3%-10%",
-        "Critical Danno aumentato del 6%-20%"
+        "Danno critico aumentato del 6%-20%"
       ],
       "Difesa": [
         "Resistenza fisica aumentata del 3%-6%",
         "Resistenza elementale aumentata del 5%-10%",
         "Resistenza ai danni aumentata del 6%-20% a vigore pieno",
         "Resistenza ai danni aumentata del 2%-5% per ogni nemico vicino",
-        "Resistenza ai danni aumentata del 4%-10% of durabilità attuale"
+        "Resistenza ai danni aumentata del 4%-10% della durabilità attuale"
       ]
     },
     "infetto": {
       "Critico": [
         "Probabilità colpo critico aumentata del 5%-10%",
-        "Critical Danno aumentato del 10%-20%",
+        "Danno critico aumentato del 10%-20%",
         "Probabilità colpo critico aumentata del 5%-10%",
-        "Critical Danno aumentato del 10%-20%"
+        "Danno critico aumentato del 10%-20%"
       ],
       "Varie": [
         "Durabilità aumentata del 50%-100%",
@@ -376,11 +376,11 @@
         "Non riparabile",
         "Consuma focus in combattimento",
         "Costo focus aumentato del 26%-40%",
-        "Perdi 10-15 focus on danno subito",
+        "Perdi 10-15 focus quando subisci danno",
         "Consuma salute in combattimento",
         "Resistenza ai danni ridotta del 10%-15%",
-        "Resistenza ai danni ridotta del 21%-30% per 6 secondi after danno subito",
-        "Resistenza ai danni ridotta del 26%-40% se non ci sonot a focus pieno",
+        "Resistenza ai danni ridotta del 21%-30% per 6 secondi dopo aver subito danno",
+        "Resistenza ai danni ridotta del 26%-40% se focus non è pieno",
         "Resistenza allo sbilanciamento ridotta del 26%-40%",
         "Focus massimo ridotto del 18%-25%",
         "Salute massima ridotta del 14%-20%",
@@ -389,9 +389,9 @@
         "Guarigione ridotta del 20%-30%"
       ],
       "Offensivo": [
-        "Gain 20%-40% spine",
-        "Gain 7%-15% penetrazione armatura",
-        "Infliggi 7%-15% Damage on danno subito",
+        "Ottieni 20%-40% spine",
+        "Ottieni 7%-15% penetrazione armatura",
+        "Infliggi 7%-15% danno quando subisci danno",
         "Danno aumentato del 10%-20% per 10 secondi after sbilanciamento an nemico",
         "nemico congelato Armatura ridotta del 15%-30%",
         "nemico infetto Resistenza allo sbilanciamento ridotta del 15%-30%"
@@ -420,7 +420,7 @@
         "Resistenza fisica aumentata del 3%-6%",
         "Guadagno barriera aumentato del 25%-40%",
         "Resistenza ai danni aumentata del 10%-20% mentre carichi",
-        "Resistenza ai danni aumentata del 6%-10% of durabilità attuale",
+        "Resistenza ai danni aumentata del 6%-10% della durabilità attuale",
         "Resistenza ai danni aumentata del 25%-50% per 10 secondi dopo essere stato afflitto da uno stato"
       ]
     }
@@ -432,23 +432,23 @@
         "Peso ridotto del 3%-10%",
         "Difesa postura aumentata di 1-3",
         "Resistenza allo sbilanciamento aumentata del 7%-15%",
-        "Perdita di durabilità ignorata con 7%-25% chance"
+        "Perdita di durabilità ignorata con probabilità 7%-25%"
       ],
       "Offensivo": [
-        "Danno aumentato del 4%-15% per 10 secondi dopo danno schivato",
-        "Gain 12%-40% spine",
-        "Infliggi 4%-15% Damage su danno schivato",
-        "Gain 7%-15% penetrazione armatura"
+        "Danno aumentato del 4%-15% per 10 secondi dopo un danno schivato",
+        "Ottieni 12%-40% spine",
+        "Infliggi 4%-15% danno su un danno schivato",
+        "Ottieni 7%-15% penetrazione armatura"
       ],
       "Focus": [
-        "Ottieni 5-15 focus su danno schivato"
+        "Ottieni 5-15 focus su un danno schivato"
       ],
       "Vigore": [
         "Costo vigore ridotto del 4%-15%",
         "Dodge Costo vigore ridotto del 7%-25%",
-        "Ottieni 5-15 vigore su danno schivato",
+        "Ottieni 5-15 vigore su un danno schivato",
         "Recupero vigore aumentato del 6%-20%",
-        "Recupero vigore aumentato del 6%-20% of durabilità attuale"
+        "Recupero vigore aumentato del 6%-20% della durabilità attuale"
       ],
       "Elementale": [
         "Ghiaccio Danno aumentato del 3%-10%",
@@ -457,7 +457,7 @@
         "Fisico Danno aumentato del 3%-10%"
       ],
       "Salute": [
-        "Gain 10%-25% salute recuperabile"
+        "Ottieni 10%-25% salute recuperabile"
       ],
       "Movimento": [
         "Velocità movimento aumentata del 3%-10%",
@@ -465,12 +465,12 @@
       ],
       "Critico": [
         "Probabilità colpo critico aumentata del 3%-10%",
-        "Critical Danno aumentato del 6%-20%"
+        "Danno critico aumentato del 6%-20%"
       ],
       "Difesa": [
         "Resistenza fisica aumentata del 3%-6%",
         "Resistenza elementale aumentata del 5%-10%",
-        "Ottieni 5-10 barriera su danno schivato"
+        "Ottieni 5-10 barriera su un danno schivato"
       ]
     },
     "infetto": {
@@ -481,11 +481,11 @@
         "Carico equipaggiamento ridotto del 20%-30%",
         "Non riparabile",
         "Resistenza ai danni ridotta del 10%-15%",
-        "Resistenza ai danni ridotta del 21%-30% per 6 secondi after danno subito",
+        "Resistenza ai danni ridotta del 21%-30% per 6 secondi dopo aver subito danno",
         "Consuma focus in combattimento",
         "Consuma salute in combattimento",
-        "Perdi 10-15 focus on danno subito",
-        "Resistenza ai danni ridotta del 26%-40% se non ci sonot a focus pieno",
+        "Perdi 10-15 focus quando subisci danno",
+        "Resistenza ai danni ridotta del 26%-40% se focus non è pieno",
         "Resistenza allo sbilanciamento ridotta del 26%-40%",
         "Costo focus aumentato del 26%-40%",
         "Focus massimo ridotto del 18%-25%",
@@ -497,14 +497,14 @@
         "Solo rotolata pesante"
       ],
       "Offensivo": [
-        "Gain 20%-40% spine",
-        "Gain 7%-15% penetrazione armatura",
-        "Infliggi 7%-15% Damage su danno schivato",
+        "Ottieni 20%-40% spine",
+        "Ottieni 7%-15% penetrazione armatura",
+        "Infliggi 7%-15% danno su un danno schivato",
         "Danno aumentato del 5%-10% dopo aver scattato per 4 seconds"
       ],
       "Vigore": [
-        "Recupero vigore aumentato del 10%-20% of durabilità attuale",
-        "Costo vigore ridotto del 10%-20% a focus basso"
+        "Recupero vigore aumentato del 10%-20% della durabilità attuale",
+        "Costo vigore ridotto del 10%-20% con focus basso"
       ],
       "Elementale": [
         "Ghiaccio Danno aumentato del 5%-10%",
@@ -514,15 +514,15 @@
         "Piaga Danno aumentato del 5%-10%"
       ],
       "Salute": [
-        "Ottieni 3%-5% salute su danno schivato",
+        "Ottieni 3%-5% salute su un danno schivato",
         "Vigore massimo aumentato del 2-5% del focus massimo"
       ],
       "Movimento": [
-        "Velocità movimento aumentata del 7%-15% per 5 secondi after Damage Infliggit by attacco caricato"
+        "Velocità movimento aumentata del 7%-15% per 5 secondi dopo danno inflitto con attacco caricato"
       ],
       "Critico": [
         "Probabilità colpo critico aumentata del 5%-10%",
-        "Critical Danno aumentato del 10%-20%"
+        "Danno critico aumentato del 10%-20%"
       ],
       "Difesa": [
         "Resistenza elementale aumentata del 5%-10%",
@@ -537,14 +537,14 @@
         "Peso ridotto del 3%-10%",
         "Difesa postura aumentata di 1-3",
         "Resistenza allo sbilanciamento aumentata del 7%-15%",
-        "Perdita di durabilità ignorata con 7%-25% chance"
+        "Perdita di durabilità ignorata con probabilità 7%-25%"
       ],
       "Offensivo": [
-        "Gain 12%-40% spine",
-        "Infliggi 7%-25% Damage su parata",
-        "Normal Attack Danno aumentato del 4%-15% per 4 secondi after Damage Infliggit by attacco caricato",
-        "Danno sbilanciamento aumentato del 6%-20% per 4 secondi after Damage Infliggit by attacco caricato",
-        "Gain 7%-15% penetrazione armatura"
+        "Ottieni 12%-40% spine",
+        "Infliggi 7%-25% danno con parata",
+        "Danno d'attacco normale aumentato del 4%-15% per 4 secondi dopo danno inflitto con attacco caricato",
+        "Danno sbilanciamento aumentato del 6%-20% per 4 secondi dopo danno inflitto con attacco caricato",
+        "Ottieni 7%-15% penetrazione armatura"
       ],
       "Focus": [
         "Ottieni 5-15 focus su parata"
@@ -560,13 +560,13 @@
         "Piaga Danno aumentato del 3%-10%"
       ],
       "Salute": [
-        "Ottieni 4%-10% salute su uccisione",
-        "Gain 10%-25% salute recuperabile",
-        "Guarigione aumentata del 4%-15% of durabilità attuale"
+        "Ottieni 4%-10% salute con uccisione",
+        "Ottieni 10%-25% salute recuperabile",
+        "Guarigione aumentata del 4%-15% della durabilità attuale"
       ],
       "Critico": [
         "Probabilità colpo critico aumentata del 3%-10%",
-        "Critical Danno aumentato del 6%-20%"
+        "Danno critico aumentato del 6%-20%"
       ],
       "Difesa": [
         "Resistenza fisica aumentata del 3%-6%",
@@ -581,31 +581,31 @@
         "Carico equipaggiamento ridotto del 20%-30%",
         "Non riparabile",
         "Resistenza ai danni ridotta del 10%-15%",
-        "Resistenza ai danni ridotta del 21%-30% per 6 secondi after danno subito",
-        "Resistenza ai danni ridotta del 26%-40% se non ci sonot a focus pieno",
+        "Resistenza ai danni ridotta del 21%-30% per 6 secondi dopo aver subito danno",
+        "Resistenza ai danni ridotta del 26%-40% se focus non è pieno",
         "Resistenza allo sbilanciamento ridotta del 26%-40%",
         "Consuma focus in combattimento",
         "Consuma salute in combattimento",
-        "Perdi 10-15 focus on danno subito",
+        "Perdi 10-15 focus quando subisci danno",
         "Costo focus aumentato del 26%-40%",
         "Focus massimo ridotto del 18%-25%",
         "Salute massima ridotta del 14%-20%",
         "Vigore massimo ridotto del 14%-20%",
         "Costo vigore aumentato del 13%-20%",
-        "Attack Costo vigore aumentato del 20%-30%",
+        "Costo vigore d'attacco aumentato del 20%-30%",
         "Parata disabilitata"
       ],
       "Offensivo": [
-        "Gain 20%-40% spine",
-        "Gain 7%-15% penetrazione armatura",
-        "attacco caricato Danno aumentato del 10%-20%",
-        "Infliggi 12%-25% Damage su parata",
-        "Normal Attack Danno aumentato del 12%-25% per 5 secondi after Damage Infliggit by attacco caricato",
-        "Execute Infected Low Salute nemici on Damage Infliggit",
-        "Danno aumentato del 7%-15% per 10 secondi dopo parata"
+        "Ottieni 20%-40% spine",
+        "Ottieni 7%-15% penetrazione armatura",
+        "Danno da attacco caricato aumentato del 10%-20%",
+        "Infliggi 12%-25% danno con parata",
+        "Danno d'attacco normale aumentato del 12%-25% per 5 secondi dopo danno inflitto con attacco caricato",
+        "Esecuzione dei nemici infetti con salute bassa quando infliggi danno",
+        "Danno aumentato del 7%-15% per 10 secondi dopo una parata"
       ],
       "Vigore": [
-        "Ottieni 20-40 vigore on sbilanciamento an nemico"
+        "Ottieni 20-40 vigore con lo sbilanciamento del nemico"
       ],
       "Elementale": [
         "Ghiaccio Danno aumentato del 5%-10%",
@@ -619,15 +619,15 @@
         "Accumulo shock aumentato del 10%-20%"
       ],
       "Salute": [
-        "Ottieni 5%-10% salute su uccisione",
-        "Ottieni 7%-15% salute on sbilanciamento an nemico",
-        "Guarigione aumentata del 7%-15% of durabilità attuale",
-        "Gain 10%-20% furto vitale contro nemici sanguinanti",
-        "Ottieni 5%-10% salute su parata"
+        "Ottieni 5%-10% salute con uccisione",
+        "Ottieni 7%-15% salute con lo sbilanciamento del nemico",
+        "Guarigione aumentata del 7%-15% della durabilità attuale",
+        "Ottieni 10%-20% furto vitale contro nemici sanguinanti",
+        "Ottieni 5%-10% salute con la parata"
       ],
       "Critico": [
         "Probabilità colpo critico aumentata del 5%-10%",
-        "Critical Danno aumentato del 10%-20%",
+        "Danno critico aumentato del 10%-20%",
         "Probabilità colpo critico aumentata del 10%-20% contro nemici in fiamme"
       ],
       "Difesa": [
